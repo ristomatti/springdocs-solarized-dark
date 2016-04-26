@@ -1,6 +1,5 @@
-@-moz-document url-prefix("https://docs.spring.io/spring") {
+@-moz-document regexp("https?://docs\\.spring\\.io.*") {
 @namespace url(http://www.w3.org/1999/xhtml);
-
 body {
    background-color: #181818;
    color: #839496;
@@ -25,8 +24,8 @@ pre {
 }
 
 :not(pre) > code {
-   background: none;
-   border: none;
+   background-color: #212121 !important;
+   border: 1px solid #3a3a3a !important;
 }
 
 :not(pre) > code.classname {
@@ -37,18 +36,63 @@ pre {
    color: #859900;
 }
 
-pre.programlisting,
-pre.screen {
-   color: #93a1a1 !important;
-   background-color: #212121;
-   border: 1px solid #3a3a3a;
+code {
+	color: #cb4b16; /* orange */
 }
 
-span.hl-tag { color: #859900; }
-span.hl-attribute { color: #cb4b16; }
-span.hl-value { color: #b58900; }
-span.hl-keyword { color: #6c71c4; }
+pre.programlisting,
+pre.screen,
+pre.prettyprinted {
+   color: #93a1a1 !important;
+   background-color: #212121;
+   border: 1px solid #3a3a3a !important;
+}
 
+pre.prettyprinted span,
+code span.pln {
+   color: #93a1a1;
+}
+
+span.hl-tag,
+code span.atv {
+   color: #859900; /* green */
+}
+
+span.hl-attribute {
+   color: #cb4b16; /* orange */
+}
+
+span.hl-value,
+code span.pun {
+   color: #b58900; /* yellow */
+}
+
+span.hl-keyword,
+code span.typ,
+code span.atn {
+   color: #6c71c4; /* purple */
+}
+
+code span.kwd,
+code span.tag {
+   color: #268bd2; /* blue */
+}
+
+code span.com {  
+   color: #657b83; /* base00 */
+}
+
+.base01 {
+	color: #586e75; /* base01 */
+}
+
+.base0 {
+	color: #657b83; /* base00 */
+}
+
+.red {
+   color: #dc322f; /* red */   
+}
 
 div.important p,
 div.note p,
@@ -69,7 +113,7 @@ a:hover {
 
 td,
 th {
-   background-color: #181818;
+   background-color: #141414;
    color: #93a1a1;
 }
 
