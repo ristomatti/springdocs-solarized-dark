@@ -1,0 +1,92 @@
+@-moz-document url-prefix("https://docs.spring.io/spring") {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body {
+   background-color: #181818;
+   color: #839496;
+}
+
+body.firstpage {
+   background-image: none;
+   background-color: #181818;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: #eee8d5;
+}
+
+pre {
+   color: #F0F0F0;
+}
+
+:not(pre) > code {
+   background: none;
+   border: none;
+}
+
+:not(pre) > code.classname {
+   color: #b58900;
+}
+
+:not(pre) > code.interfacename {
+   color: #859900;
+}
+
+pre.programlisting,
+pre.screen {
+   color: #93a1a1 !important;
+   background-color: #212121;
+   border: 1px solid #3a3a3a;
+}
+
+span.hl-tag { color: #859900; }
+span.hl-attribute { color: #cb4b16; }
+span.hl-value { color: #b58900; }
+span.hl-keyword { color: #6c71c4; }
+
+
+div.important p,
+div.note p,
+div.tip p,
+div.warning p {
+   color: #93a1a1;
+}
+
+a {
+   color: #268bd2;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #d33682;
+   text-decoration: none;
+}
+
+td,
+th {
+   background-color: #181818;
+   color: #93a1a1;
+}
+
+.navheader th,
+.navfooter td {
+   color: #93a1a1;
+}
+
+code.literal {
+   background: #212121;
+}
+
+tbody {
+   background-color: #212121 !important;
+}
+
+.sidebar p {
+   color: #212121;
+}
+}
